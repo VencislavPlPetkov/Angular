@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="clockApp">
+<head>
+	<title>Clock App</title>
+
+	<script src="angular.js"></script>
+	<script src="app.js"></script>
+</head>
+<body>
+	<h1>Clock App</h1>
+
+	<div ng-controller="TimeCtrl">
+		
+		<p>Time: {{timeString}}</p>
+		<!-- <p ng-bind="timeString"></p> -->
+
+		<button ng-click="updateTime()">Update</button>
+
+		Enter your birthday: <input ng-model="userBirthday" type="text"></input>
+		<p>Your Birthday is: {{userBirthday}}</p>
+
+
+	</div>
+
+
+
+</body>
+</html>
